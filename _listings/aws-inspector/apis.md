@@ -14,11 +14,38 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Resource Groups
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/resource-groups/master/_listings/aws-inspector/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: AWS Inspector API - Create Resource Group
+  x-api-slug: actioncreateresourcegroup-get
+  description: |-
+    Creates a resource group using the specified set of tags (key and value pairs) that
+             are used to select the EC2 instances to be included in an Amazon Inspector assessment
+             target.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Security-Identity_AmazonInspector.png
+  humanURL: https://aws.amazon.com/inspector/
+  baseURL: :///
+  tags: Amazon Web Services, Security, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/resource-groups/master/_listings/aws-inspector/actioncreateresourcegroup-get-openapi.md
+- name: AWS Inspector API - Describe Resource Groups
+  x-api-slug: actiondescriberesourcegroups-get
+  description: |-
+    Describes the resource groups that are specified by the ARNs of the resource
+             groups.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Security-Identity_AmazonInspector.png
+  humanURL: https://aws.amazon.com/inspector/
+  baseURL: :///
+  tags: Amazon Web Services, Security, Stack Network, API Service Provider, API Service
+    Provider, API Provider, Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/resource-groups/master/_listings/aws-inspector/actiondescriberesourcegroups-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://aws.identity.and.access.management.api.gallery.streamdata.io

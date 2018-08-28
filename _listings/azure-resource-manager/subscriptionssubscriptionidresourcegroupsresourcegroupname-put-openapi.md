@@ -1,9 +1,10 @@
+---
 swagger: "2.0"
 x-collection-name: Azure Resource Manager
-x-complete: 1
+x-complete: 0
 info:
-  title: SubscriptionClient
-  description: all-resource-groups-and-resources-exist-within-subscriptions--these-operation-enable-you-get-information-about-your-subscriptions-and-tenants--a-tenant-is-a-dedicated-instance-of-azure-active-directory-azure-ad-for-your-organization-
+  title: Azure Resource Manager API Resource Groups Create Or Update
+  description: Creates a resource group.
   version: 1.0.0
 host: management.azure.com
 basePath: /
@@ -62,39 +63,17 @@ paths:
           description: OK
       tags:
       - Resource Groups
-    get:
-      summary: Resource Groups Get
-      description: Gets a resource group.
-      operationId: ResourceGroups_Get
-      x-api-path-slug: subscriptionssubscriptionidresourcegroupsresourcegroupname-get
-      parameters:
-      - in: query
-        name: No Name
-      - in: path
-        name: resourceGroupName
-        description: The name of the resource group to get
-      responses:
-        200:
-          description: OK
-      tags:
-      - Resource Groups
-  /subscriptions/{subscriptionId}/resourcegroups:
-    get:
-      summary: Resource Groups List
-      description: Gets all the resource groups for a subscription.
-      operationId: ResourceGroups_List
-      x-api-path-slug: subscriptionssubscriptionidresourcegroups-get
-      parameters:
-      - in: query
-        name: $filter
-        description: The filter to apply on the operation
-      - in: query
-        name: $top
-        description: The number of results to return
-      - in: query
-        name: No Name
-      responses:
-        200:
-          description: OK
-      tags:
-      - Resource Groups
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---
